@@ -9,17 +9,17 @@
 
 🔒 Local Safety (your device)
 
-No malware / no token grabber → I scanned through it, nothing in here tries to exfiltrate your token, steal cookies, or send data anywhere except Discord’s own API endpoints.
-No persistence → It only runs while you keep DevTools open. Once you refresh/restart Discord, all the monkey-patched stuff is gone.
-No filesystem access → It doesn’t try to read or write files on your machine. The fake exePath strings are just spoofed text, not actual file operations.
-So: no virus, no spyware, no backdoor.
+- No malware / no token grabber → I scanned through it, nothing in here tries to exfiltrate your token, steal cookies, or send data anywhere except Discord’s own API endpoints.
+- No persistence → It only runs while you keep DevTools open. Once you refresh/restart Discord, all the monkey-patched stuff is gone.
+- No filesystem access → It doesn’t try to read or write files on your machine. The fake exePath strings are just spoofed text, not actual file operations.
+- So: no virus, no spyware, no backdoor.
 
 ⚠️ Account / Network Safety (no complains so far dw)
 
-It does directly call Discord’s private API endpoints (/quests/...). That means:
-Your account is making requests Discord can log.
-If you run it, your account could get flagged/suspended. (no complains so far dw)
-The code modifies live Discord internals (RunningGameStore, FluxDispatcher, etc.). If you refresh mid-patch, you might crash the client temporarily, but it won’t brick anything.
+- It does directly call Discord’s private API endpoints (/quests/...). That means:
+- Your account is making requests Discord can log.
+- If you run it, your account could get flagged/suspended. (no complains so far dw)
+- The code modifies live Discord internals (RunningGameStore, FluxDispatcher, etc.). If you refresh mid-patch, you might crash the client temporarily, but it won’t brick anything.
 
 How to use this script:
 1. Accept a quest under Discover -> Quests
